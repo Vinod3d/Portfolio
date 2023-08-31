@@ -4,10 +4,10 @@ import Card from './Card'
 import Portfolio_data from './Portfolio_data'
 
 const Portfolio = () => {
-    console.log(Portfolio_data)
+    // console.log(Portfolio_data)
   return (
     <>
-      <section className="porfolio top" id="porfolio">
+      <section className="Porfolio top" id="porfolio">
         <div className="container">
             <div className="heading text-center">
                 <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
@@ -15,9 +15,9 @@ const Portfolio = () => {
             </div>
 
             <div className="content grid">
-                {/* {Portfolio_data.map((value, index) => {
+                {Portfolio_data.map((value, index) => {
                 return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} />
-                })} */}
+                })}
             </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Card = ({ image, category, totalLike, title }) => {
+const Card = (props) => {
   const [modal, setModal] = useState(false)
 
   const toggleModal = ()=>{
@@ -13,13 +13,13 @@ const Card = ({ image, category, totalLike, title }) => {
           <img src={image} alt='' onClick={toggleModal}/>
         </div>
         <div className='category d_flex'>
-          <span onClick={toggleModal}>{category}</span>
+          <span onClick={toggleModal}>{props.date}</span>
           <label>
             <i className='far fa-heart'></i> {totalLike}
           </label>
         </div>
         <div className='title'>
-          <h2 onClick={toggleModal}>{title}</h2>
+          <h2 onClick={toggleModal}>{props.title_one}</h2>
           <a href='#popup' className='arrow' onClick={toggleModal}>
             <i className='fas fa-arrow-right'></i>
           </a>

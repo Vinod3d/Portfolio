@@ -4,7 +4,7 @@ import Card from './Card'
 import data from './FeaturesApi'
 
 const Features = () => {
-    console.log(data)
+    // console.log(data)
   return (
     <>
       <section className="features top" id="features">
