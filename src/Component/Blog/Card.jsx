@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const Card = (props) => {
   const [modal, setModal] = useState(false)
+  // console.log(props);
 
   const toggleModal = ()=>{
     setModal(!modal);
@@ -10,12 +11,12 @@ const Card = (props) => {
     <>
       <div className='box btn_shadow '>
         <div className='img'>
-          <img src={image} alt='' onClick={toggleModal}/>
+          <img src={props.image} alt='' onClick={toggleModal}/>
         </div>
         <div className='category d_flex'>
           <span onClick={toggleModal}>{props.date}</span>
           <label>
-            <i className='far fa-heart'></i> {totalLike}
+            {/* <i className='far fa-heart'></i> {totalLike} */}
           </label>
         </div>
         <div className='title'>
@@ -29,16 +30,22 @@ const Card = (props) => {
 
       {/* Popup box */}
       {modal && (
-        <div className='modal'>
+        <div className='modal modal-blog'>
           <div onClick={toggleModal} className='overlay'></div>
-          <div className='modal-content d_flex'>
+          <div className='modal-content'>
             <div className='modal-img left'>
-              <img src={image} alt='' />
+              <img src={props.image} alt='' />
             </div>
             <div className='modal-text right'>
-              <span>Featured - Design</span>
-              <h1>{title}</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+              <span>{props.date}</span>
+              <h1>{props.title_one}</h1>
+              <p>{props.desc_one}</p>
+
+              <h1>{props.title_two}</h1>
+              <p>{props.desc_two}</p>
+
+              <h1>{props.title_three}</h1>
+              <p>{props.desc_three}</p>
               <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
               <div className='button f_flex mtop'>
                 <button className='btn_shadow'>
@@ -51,6 +58,21 @@ const Card = (props) => {
               <button className='close-modal btn_shadow' onClick={toggleModal}>
                 <i className='fas fa-times'></i>
               </button>
+
+              <div className="contact mtop">
+                <h1>Leave a Reply</h1>
+                <div className="contact d_flex">
+                  <div className="left">
+                    <input type="text" placeholder='Name'/>
+                    <input type="text" placeholder='Email'/>
+                    <input type="text" placeholder='Website'/>
+                    <button className='btn_shadow'>SUBMIT NOW</button>
+                  </div>
+                  <div className="right">
+                    <textarea name="" id="" cols="30" rows="10" placeholder='Comment'></textarea>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
