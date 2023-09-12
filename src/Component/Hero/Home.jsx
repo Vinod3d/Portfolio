@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Home.css"
-import hero from "../pic/hero.png"
+import hero from "../pic/vinod-Avatar2.png"
 import skill1 from "../pic/skill1.png"
 import skill2 from "../pic/skill2.png"
 import skill3 from "../pic/skill3.png"
 import {Typewriter} from "react-simple-typewriter"
 
-
+// #e0c341
 const Home = () => {
   return (
     <>
@@ -15,13 +15,13 @@ const Home = () => {
           <div className='left top'>
             <h3>WELCOME TO MY WORLD</h3>
             <h1>
-              Hi, I’m <span>Jone Lee</span>
+              Hi, I’m <span>Vinod Chandra</span>
             </h1>
             <h2>
               a
               <span>
                 <Typewriter 
-                    words={[" Professional Coder.", " Developer."]} 
+                    words={[" Professional Coder.", " Frontent Developer."]} 
                     loop cursor cursorStyle='|' 
                     typeSpeed={70} 
                     deleteSpeed={50} 

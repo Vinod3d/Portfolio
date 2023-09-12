@@ -5,10 +5,20 @@ import logo from "../pic/logo.png"
 const Header = () => {
   // fixed Header
   window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header")
-    header.classList.toggle("active", window.scrollY > 100)
-  })
-  // Toogle Menu
+    const header = document.querySelector(".header");
+    const scrollY = window.scrollY;
+
+    if (scrollY > 50 && scrollY < 300) {
+      header.style.transform = "translateY(-100px)";
+    } else if (scrollY >= 300) {
+      header.classList.add("active");
+      header.style.transform = "translateY(0px)";
+    } else {
+      header.style.transform = "translateY(0px)";
+      header.classList.remove("active");
+    }
+  });
+  
   const [Mobile, setMobile] = useState(false)
   return (
     <>
@@ -59,4 +69,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
