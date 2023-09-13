@@ -47,7 +47,7 @@ header {
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
     transition: 1s;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     header ul {
       padding-top: 30px;
     }
@@ -96,7 +96,7 @@ header {
       line-height: 60px;
     }
     .header.active {
-      height: 10vh;
+      height: 90px;
     }
   }
   

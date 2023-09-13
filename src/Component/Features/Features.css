@@ -22,3 +22,15 @@
     opacity: 1;
   }
   
+  @media (max-width: 992px) {
+    #features{
+      margin-top: 200px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #features{
+      margin-top: 320px;
+    }
+  }
+
