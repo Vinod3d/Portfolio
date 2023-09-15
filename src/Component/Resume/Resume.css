@@ -47,9 +47,9 @@
   .Resume .left::after {
     content: "";
     position: absolute;
-    top: 16%;
+    top: 14%;
     left: 0;
-    height: 118vh;
+    height: 135vh;
     width: 5px;
     background: #d9dee2;
     z-index: -2;
@@ -85,7 +85,21 @@
     }
     .Resume .left::after {
       top: 14%;
-      height: 105vh;
+      height: 140vh;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .Resume .left::after {
+      top: 10%;
+      height: 200vh;
+    }
+  }
+
+  @media (max-width:1399px) and (min-width:992px) {
+    .Resume .left::after {
+      top: 12%;
+      height: 170vh;
     }
   }
   

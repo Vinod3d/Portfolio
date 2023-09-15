@@ -41,7 +41,7 @@ header {
   .header.active {
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 100000;
     width: 100%;
     background-color: #ecf0f3;
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
@@ -56,7 +56,7 @@ header {
       display: block;
       list-style: none;
       box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      left: 0;
+      right: 0;
       top: 0;
       transition: all 0.5s ease-in-out;
       width: 60%;
@@ -76,7 +76,7 @@ header {
     .close,
     .open {
       position: absolute;
-      top: 35px;
+      top: 13px;
       right: 20px;
       color: #ff014f;
       display: block;
@@ -84,7 +84,7 @@ header {
       z-index: 999;
     }
     .close {
-      right: 45%;
+      right: 2%;
     }
     .close.home-btn {
       background: linear-gradient(145deg, #e2e8ec, #ffffff);
