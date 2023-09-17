@@ -13,12 +13,7 @@ const Card = (props) => {
         <div className='img'>
           <img src={props.image} alt='' onClick={toggleModal}/>
         </div>
-        <div className='category d_flex'>
-          <span onClick={toggleModal}>{props.date}</span>
-          <label>
-            {/* <i className='far fa-heart'></i> {totalLike} */}
-          </label>
-        </div>
+       
         <div className='title'>
           <h2 onClick={toggleModal}>{props.title_one}</h2>
           <a href='#popup' className='arrow' onClick={toggleModal}>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import myPic from '../pic/myPic.jpg'
 
 const Contact = () => {
     const [data, setData] = useState({
@@ -41,14 +42,14 @@ const Contact = () => {
             <div className='left'>
               <div className='box box_shodow'>
                 <div className='img'>
-                  <img src="https://source.unsplash.com/featured/301x200" alt='' />
+                  <img src={myPic} alt='' />
                 </div>
                 <div className='details'>
-                  <h1>Nevine Acotanza</h1>
-                  <p>Chief Operating Officer</p>
+                  <h1>Vinod Chandra</h1>
+                  <p>(Frontend Developer)</p>
                   <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
-                  <p>Phone: +01234567890</p>
-                  <p>Email: admin@example.com</p> <br />
+                  <p>Phone: 9575711907</p>
+                  <p>Email: vinodchandra979@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className='button f_flex'>
                     <button className='btn_shadow'>
@@ -58,7 +59,7 @@ const Contact = () => {
                       <i className='fab fa-instagram'></i>
                     </button>
                     <button className='btn_shadow'>
-                      <i className='fab fa-twitter'></i>
+                      <i className='fab fa-github'></i>
                     </button>
                   </div>
                 </div>
