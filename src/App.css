@@ -78,6 +78,18 @@ button {
 .heading {
   margin: 50px 0 50px 0;
 }
+
+.logo{
+  width: 200px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.logo img{
+  width: 100%;
+  height: auto;
+}
+
 .heading h4 {
   color: #ff014f;
   letter-spacing: 2px;
@@ -125,12 +137,7 @@ select > option{
   font-size: 18px;
 }
 /*----------Footer---------*/
-footer {
-  margin: 5% 0 5% 0;
-}
-footer p {
-  margin-top: 30px;
-}
+
 /*----------Footer---------*/
 @media (max-width: 768px) {
   .grid {

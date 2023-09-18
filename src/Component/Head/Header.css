@@ -3,6 +3,8 @@ header {
     line-height: 90px;
     transition: 1s;
   }
+
+
   header .container {
     height: 100%;
     padding-top: 10px;
@@ -76,7 +78,7 @@ header {
     .close,
     .open {
       position: absolute;
-      top: 13px;
+      top: 35px;
       right: 20px;
       color: #ff014f;
       display: block;
