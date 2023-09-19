@@ -7,7 +7,7 @@ const ProjectsApi = [
     {
       id: 1,
       image: Project1,
-      Tech : "React",
+      tech : "javascript",
       title_one: "Movix - movie search website",
       desc_one: "Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
       title_two: "Nobis eleifend option conguenes.",
@@ -18,7 +18,7 @@ const ProjectsApi = [
     {
       id: 2,
       image: Project2,
-      Tech : "React",
+      tech : "React",
       title_one: "Todo-List App ",
       desc_one: "Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
       title_two: "Nobis eleifend option conguenes.",
@@ -29,7 +29,7 @@ const ProjectsApi = [
     {
       id: 3,
       image: Project3,
-      Tech : "html, css, bootstrap",
+      tech : "html, css, bootstrap",
       title_one: "Atharva Hospital",
       desc_one: "Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
       title_two: "Nobis eleifend option conguenes.",
@@ -40,7 +40,7 @@ const ProjectsApi = [
     {
       id: 4,
       image: Project4,
-      Tech : "bootstrap",
+      tech : "bootstrap",
       title_one: "Mamta Netralay",
       desc_one: "Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
       title_two: "Nobis eleifend option conguenes.",

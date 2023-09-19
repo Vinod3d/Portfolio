@@ -27,7 +27,7 @@ const Filter = ({ searchQuery, selectedTech, onSearchChange, onFilterChange, num
                     onChange={onFilterChange}
                 >
                     <option value="">Show All</option>
-                    <option value="html css">HTML & CSS</option>
+                    <option value="html, css">HTML & CSS</option>
                     <option value="javascript">JavaScript</option>
                     <option value="react">React</option>
                     <option value="bootstrap">Bootstrap</option>

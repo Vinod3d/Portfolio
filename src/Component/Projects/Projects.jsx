@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 import '../Portfolio/Portfolio.css';
 import ProjectsApi from './ProjectsApi';
@@ -8,8 +8,8 @@ import Filter from './Filter';
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTech, setSelectedTech] = useState('');
+  const [loading, setLoading] = useState(false); // Initialize loading state as false
   const [filteredProjects, setFilteredProjects] = useState([]);
-  const [loading, setLoading] = useState(true); // Add loading state
 
   // Function to handle search input change
   const handleSearchChange = (e) => {
@@ -21,32 +21,30 @@ const Projects = () => {
     setSelectedTech(e.target.value);
   };
 
-  useEffect(() => {
-    // Simulate asynchronous loading
-    setLoading(true);
+  // Filter projects based on search query and selected tech
+  const filterProjects = () => {
+    const techFilter = selectedTech.toLowerCase();
+    const searchFilter = searchQuery.toLowerCase();
 
+    const filtered = ProjectsApi.filter((project) => {
+      const techMatch = project.tech.toLowerCase().includes(techFilter);
+      const titleMatch = project.title_one.toLowerCase().includes(searchFilter) ||
+        project.title_two.toLowerCase().includes(searchFilter) ||
+        project.title_three.toLowerCase().includes(searchFilter) || project.tech.toLowerCase().includes(searchFilter);
+
+      return techMatch && titleMatch;
+    });
+
+    setFilteredProjects(filtered);
+  };
+
+  // Handle filtering whenever searchQuery or selectedTech changes
+  React.useEffect(() => {
+    setLoading(true); // Set loading to true while filtering
     setTimeout(() => {
-      // Filter and map the project items based on search and filter criteria
-      const filteredByTech = ProjectsApi.filter((project) =>
-        project.Tech.toLowerCase().includes(selectedTech.toLowerCase()),
-        // setSearchQuery('')
-      );
-
-      const filteredBySearch = ProjectsApi.filter((value) =>
-        value.title_one.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        value.title_two.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        value.title_three.toLowerCase().includes(searchQuery.toLowerCase()),
-
-        // selectedTech('')
-      );
-
-      // Combine the two filters while ensuring there are no duplicates
-      const newFilteredProjects = [...new Set([...filteredByTech, ...filteredBySearch])];
-
-      setFilteredProjects(newFilteredProjects);
+      filterProjects(); // Filter projects
       setLoading(false); // Set loading to false when done
-    }, 1000); // Simulating a delay for loading
-
+    }, 1000); // Simulate a delay for loading
   }, [searchQuery, selectedTech]);
 
   return (
@@ -67,13 +65,14 @@ const Projects = () => {
               numProjects={filteredProjects.length}
             />
             {loading ? (
-              // Show loading spinner or message while data is loading
               <p>Loading...</p>
             ) : (
-              filteredProjects.map((value) => {
-                return (
+              filteredProjects.length === 0 ? (
+                <p>No projects found</p>
+              ) : (
+                filteredProjects.map((value) => (
                   <Card
-                    key={value.id} // Use a unique identifier as the key
+                    key={value.id}
                     image={value.image}
                     date={value.date}
                     title_one={value.title_one}
@@ -83,8 +82,8 @@ const Projects = () => {
                     desc_two={value.desc_two}
                     desc_three={value.desc_three}
                   />
-                );
-              })
+                ))
+              )
             )}
           </div>
         </div>
