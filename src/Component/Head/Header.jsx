@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./Header.css"
-import logo from "../pic/logo.png"
+import logo from "../pic/Logo.png"
 
 const Header = () => {
   // fixed Header
@@ -25,7 +25,9 @@ const Header = () => {
       <header className='header'>
         <div className='container d_flex'> 
           <div className='logo'>
-            <img src={logo} alt='' />
+            <a href="#home">
+              <img src={logo} alt='' />
+            </a>
           </div>
 
           <div className='navlink'>
@@ -47,7 +49,7 @@ const Header = () => {
                 <a href='#contact'>contact</a>
               </li>
               <li>
-                <button className='home-btn'>CALL NOW</button>
+                <a href="tel:9575711907" className='home-btn'>CALL NOW</a>
               </li>
             </ul>
 

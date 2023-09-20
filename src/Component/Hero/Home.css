@@ -26,8 +26,29 @@
     color: #878e99;
     font-size: 18px;
     line-height: 30px;
-    margin-top: 30px;
+    margin: 30px auto;
   }
+  
+  .hero a{
+    cursor: pointer;
+  }
+  .home-btn {
+    padding: 18px 20px;
+    border-radius: 6px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    height: fit-content;
+    color: #ff014f;
+  }
+  .home-btn {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  }
+  .home-btn:hover {
+    background: #ff014f;
+    color: white;
+  }
+
   .hero_btn {
     margin-top: 10%;
   }

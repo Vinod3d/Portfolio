@@ -43,31 +43,22 @@ const Card = (props) => {
               <p>{props.desc_three}</p>
               <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
               <div className='button f_flex mtop'>
-                <button className='btn_shadow'>
-                  LIKE THIS <i className='far fa-thumbs-up'></i>
-                </button>
-                <button className='btn_shadow'>
-                  VIEW PROJECT<i className='fas fa-chevron-right'></i>
-                </button>
+                <a href={props.url} target='_blank'>
+                  <button className='btn_shadow'>
+                      DEMO LINK<i className='fas fa-chevron-right'></i>
+                  </button>
+                </a>
+                <a href={props.github} target='_blank'>
+                  <button className='btn_shadow'>
+                      GITHUB<i className='fas fa-chevron-right'></i>
+                  </button>
+                </a>
               </div>
               <button className='close-modal btn_shadow' onClick={toggleModal}>
                 <i className='fas fa-times'></i>
               </button>
 
-              <div className="contact mtop">
-                <h1>Leave a Reply</h1>
-                <div className="contact d_flex">
-                  <div className="left">
-                    <input type="text" placeholder='Name'/>
-                    <input type="text" placeholder='Email'/>
-                    <input type="text" placeholder='Website'/>
-                    <button className='btn_shadow'>SUBMIT NOW</button>
-                  </div>
-                  <div className="right">
-                    <textarea name="" id="" cols="30" rows="10" placeholder='Comment'></textarea>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

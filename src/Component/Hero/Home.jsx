@@ -34,7 +34,7 @@ const Home = () => {
               </span>
             </h2>
 
-            <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+            <p>I am a dedicated and creative frontend developer with 2.5 years of hands-on experience in crafting immersive web experiences. My passion lies in turning design concepts into interactive, user-friendly websites that leave a lasting impression.</p>
 
             <div className='hero_btn'>
               

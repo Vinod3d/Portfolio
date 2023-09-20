@@ -47,6 +47,7 @@
     opacity: 1;
   }
   .Portfolio h2 {
+    margin-top: 10px;
     font-size: 18px;
     transition: 0.5s;
     padding-bottom: 30px;

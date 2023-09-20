@@ -47,9 +47,9 @@
   .Resume .left::after {
     content: "";
     position: absolute;
-    top: 14%;
+    top: 17%;
     left: 0;
-    height: 105vh;
+    height: 80vh;
     width: 5px;
     background: #d9dee2;
     z-index: -2;
@@ -80,9 +80,7 @@
     background: #ff3a75;
   }
   @media (max-width: 768px) {
-    .Resume .d_flex {
-      flex-direction: column;
-    }
+   
     .Resume .left::after {
       top: 14%;
       height: 110vh;
@@ -90,8 +88,12 @@
   }
 
   @media (max-width: 992px) {
+    .Resume .d_flex {
+      flex-direction: column;
+    }
+
     .Resume .left::after {
-      top: 10%;
+      top: 14%;
       height: 150vh;
     }
   }

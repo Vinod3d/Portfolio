@@ -7,10 +7,11 @@ header {
 
   header .container {
     height: 100%;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   header ul li {
     margin-left: 30px;
+    transition: all 1s ease-in-out;
   }
   header ul li a {
     transition: 0.5s;
@@ -39,6 +40,7 @@ header {
   }
   .open {
     display: none;
+    /* transform: translateX(500px); */
   }
   .header.active {
     position: fixed;
@@ -56,11 +58,12 @@ header {
     .nav-links-mobile {
       position: absolute;
       display: block;
+      transform: translateX(0px); /* Initial position is off the screen */
       list-style: none;
       box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       right: 0;
       top: 0;
-      transition: all 0.5s ease-in-out;
+      transition: transform 1s ease-in-out; /* Use transform for smoother animation */
       width: 60%;
       height: 100vh;
       background-color: white;
@@ -68,13 +71,25 @@ header {
     }
     header ul li {
       width: 100%;
-      transition: all 0.5s ease-in-out;
+      transition: all 1s ease-in-out;
       text-transform: uppercase;
       line-height: 70px;
     }
     header .link {
-      display: none;
+      position: absolute;
+      display: block;
+      transform: translateX(600px); /* Initial position is off the screen */
+      list-style: none;
+      box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      right: 0;
+      top: 0;
+      transition: transform 1s ease-in-out; /* Use transform for smoother animation */
+      width: 60%;
+      height: 100vh;
+      background-color: white;
+      z-index: 888;
     }
+
     .close,
     .open {
       position: absolute;

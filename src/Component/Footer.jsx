@@ -8,9 +8,11 @@ const Footer = () => {
       <footer className="footer">
         <div className='conatiner text-center top'>
           <div className='img logo'>
-            <img src={logo} alt='' />
+            <a href="#home">
+              <img src={logo} alt='' />
+            </a>
           </div>
-          <p>© 2021. All rights reserved by GorkCoder-Themes.</p>
+          <p>© 2023. All rights reserved by Vinod Chandra.</p>
         </div>
       </footer>
     </>

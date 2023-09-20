@@ -52,8 +52,8 @@ const Projects = () => {
       <section className='Portfolio Blog' id='blog'>
         <div className='container top'>
           <div className='heading text-center'>
-            <h4>VISIT MY BLOG AND KEEP YOUR FEEDBACK</h4>
-            <h1>My Blog</h1>
+            <h4>VISIT MY Projects</h4>
+            <h1>My Projects</h1>
           </div>
 
           <div className='content grid'>
@@ -74,7 +74,8 @@ const Projects = () => {
                   <Card
                     key={value.id}
                     image={value.image}
-                    date={value.date}
+                    url={value.url}
+                    github={value.github}
                     title_one={value.title_one}
                     title_two={value.title_two}
                     title_three={value.title_three}

@@ -52,15 +52,21 @@ const Contact = () => {
                   <p>Email: vinodchandra979@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className='button f_flex'>
-                    <button className='btn_shadow'>
-                      <i className='fab fa-facebook-f'></i>
-                    </button>
-                    <button className='btn_shadow'>
-                      <i className='fab fa-instagram'></i>
-                    </button>
-                    <button className='btn_shadow'>
-                      <i className='fab fa-github'></i>
-                    </button>
+                      <a href="https://www.facebook.com/" target='_blank'>
+                        <button className='btn_shadow'>
+                            <i className='fab fa-facebook-f'></i>
+                        </button>
+                      </a>
+                      <a href="https://www.instagram.com/" target='_blank'>
+                        <button className='btn_shadow'>
+                          <i className='fab fa-instagram'></i>
+                        </button>
+                      </a>
+                      <a href="https://github.com/Vinod3d" target='_blank'>
+                        <button className='btn_shadow'>
+                          <i className='fab fa-github'></i>
+                        </button>
+                      </a>
                   </div>
                 </div>
               </div>
