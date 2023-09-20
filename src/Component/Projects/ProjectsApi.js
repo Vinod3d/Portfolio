@@ -1,7 +1,7 @@
-import Project1 from "../pic/Project1.jpg"
-import Project2 from "../pic/Project2.jpg"
-import Project3 from "../pic/Project3.jpg"
-import Project4 from "../pic/Project4.jpg"
+import Project1 from "../pic/project1.jpg"
+import Project2 from "../pic/project2.jpg"
+import Project3 from "../pic/project3.jpg"
+import Project4 from "../pic/project4.jpg"
 
 const ProjectsApi = [
     {
