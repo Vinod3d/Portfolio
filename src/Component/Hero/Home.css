@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600&display=swap');
+
 .hero {
     position: relative;
     z-index: -1;
+    font-family: 'Rubik', sans-serif;
   }
   .hero h3 {
     font-weight: 100;
@@ -146,23 +149,29 @@
     .hero .right,
     .hero .left {
       width: 100%;
-      height: 470px;
-      margin: 20% auto 0;
+      /* height: 600px; */
+      /* margin: 20% auto 0; */
       position: relative;
       top: 0;
       left: 0;
       bottom: 0;
     }
+    .hero .right{
+      height: 500px;
+      margin: 50% auto 0;
+    }
   
     .hero .f_flex {
       flex-direction: column;
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
     }
     .hero .right_img {
       width: 85vw;
-      /* height: 100%; */
+      height: 100%;
       margin: 36% 5% 10%;
       position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
   
@@ -170,14 +179,19 @@
     .hero .right,
     .hero .left {
       width: 100%;
-      height: 370px;
+      height: 350px;
       /* margin: 25% auto 0%; */
+    }
+
+    .hero .right{
+      /* height: 500px; */
+      margin: 80% auto 0;
     }
 
     .hero .right_img {
       width: 90vw;
       /* height: 100%; */
-      margin: 36% 0% 10%;
+      margin: 0% 0% 0%;
       position: absolute;
     }
   }

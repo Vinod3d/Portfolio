@@ -49,7 +49,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className='Portfolio Blog' id='blog'>
+      <section className='Portfolio Blog' id='project'>
         <div className='container top'>
           <div className='heading text-center'>
             <h4>VISIT MY Projects</h4>

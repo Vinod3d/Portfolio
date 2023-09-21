@@ -55,15 +55,18 @@ header {
     header ul {
       padding-top: 30px;
     }
-    .nav-links-mobile {
+    .header.active{
+      position: relative;
+    }
+    /* .nav-links-mobile {
       position: absolute;
       display: block;
-      transform: translateX(0px); /* Initial position is off the screen */
+      transform: translateX(0px); 
       list-style: none;
       box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       right: 0;
       top: 0;
-      transition: transform 1s ease-in-out; /* Use transform for smoother animation */
+      transition: transform 1s ease-in-out; 
       width: 60%;
       height: 100vh;
       background-color: white;
@@ -74,10 +77,10 @@ header {
       transition: all 1s ease-in-out;
       text-transform: uppercase;
       line-height: 70px;
-    }
+    } */
     header .link {
       position: absolute;
-      display: block;
+      display: none;
       transform: translateX(600px); /* Initial position is off the screen */
       list-style: none;
       box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
