@@ -19,11 +19,11 @@ const Sidebar = ({mobile, setMobile}) => {
 
       <ul className="links">
         {Navlinks.map((link) =>{
-            const {id, url, text, icon} = link;
+            const {id, url, text, className} = link;
             return (
                 <li key={id}>
-                    <a href={url}>
-                        {icon}
+                    <a href={url} className={className}>
+                        
                         {text}
                     </a>
                 </li>
